@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <style>
+      body { width: 800px; height: 600px; padding: 0; margin: 0;}
+      #top { position:absolute; top: 0; height: 25px; left: 0; right: 0; padding: 5px; box-sizing: border-box;}
+      #botl { position: absolute; top: 35px; bottom: 0; left: 0; right: 50%; }
+      #botr { position: absolute; top: 35px; bottom: 0; left: 50%; right: 0; overflow: auto;}
+      #allowed_urls { width: 100%; height: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="top">Mode (<span id="behavior">forbid</span>): <button id="forbid">forbid</button><button id="permit">permit</button></div>
+    <div id="botl"><textarea id="allowed_urls"></textarea></div>
+    <div id="botr"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
